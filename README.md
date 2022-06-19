@@ -10,7 +10,7 @@
 
 
 
-## Para instalação do projeto foi necessário instalar as seguintes dependencias:
+<p> Para instalação do projeto foi necessário instalar as seguintes dependencias: </p>
 
 <ul>
    <li>npx create-react-app</li>
