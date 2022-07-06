@@ -20,6 +20,7 @@ const AddEdit = () => {
   useEffect(() => {
     firebaseDb.child("contacts").on("value", (snapshot) => {
       if (snapshot.val() !== null) {
+         console.log('teste', snapshot.val());
         setData({
           ...snapshot.val(),
         });
