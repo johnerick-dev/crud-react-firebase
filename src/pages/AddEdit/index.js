@@ -23,9 +23,9 @@ const AddEdit = () => {
         setData({
           ...snapshot.val(),
         });
-      } else {
-        setData({});
-      }
+        return;
+      } 
+      setData({});
     });
     return () => {
       setData({});
@@ -35,12 +35,9 @@ const AddEdit = () => {
   useEffect(() => {
     if (id) {
       setState({ ...data[id] });
-    } else {
-      setState({ ...initialState });
+      return;
     }
-    return () => {
-      setState({ ...initialState });
-    };
+    setState({ ...initialState });
   }, [id, data]);
 
   const handleInputChange = (e) => {
