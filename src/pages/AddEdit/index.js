@@ -110,7 +110,7 @@ const AddEdit = () => {
           onChange={handleInputChange}
         />
 
-        <input type="submit" value={id ? "Update" : "Salvar"} />
+        <input type="submit" value={id ? "Atualizar" : "Salvar"} />
       </form>
     </div>
   );
